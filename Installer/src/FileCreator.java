@@ -1,9 +1,9 @@
 import java.io.File;
 import java.io.IOException;
 
-public class CreateFile {
+public class FileCreator {
     public static void createFile(String filePath, String fileName, StringBuilder message) {
-        File file = new File(filePath, fileName);
+        File file = new File(filePath,fileName);
         String msg;
         try {
             if (file.createNewFile()) {
